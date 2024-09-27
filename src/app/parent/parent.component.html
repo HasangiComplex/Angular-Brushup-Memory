@@ -1,0 +1,9 @@
+<p>parent works!</p>
+
+<p>Check whether the modal is closed : {{modalStatus}}</p>
+<app-child [isAllowed] = "decision"
+           [newId]="id"
+           [currentPAgeFromParent]="currentPage"
+           (notifyParent)="notifyParent($event)"
+           (closeModal)="modalClosedNotifyForParent($event)"
+></app-child>

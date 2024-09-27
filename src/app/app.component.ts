@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-ready-interview';
+  value = 'Initial Value';
+  newValue = "This is initial value"
+
+
+  changeNewValue($event: any) : void {
+    this.newValue = ($event.target as HTMLInputElement).value
+  }
+
+
 }

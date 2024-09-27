@@ -1,0 +1,17 @@
+<h1>Angular Interview</h1>
+---------Data binding---------
+
+<p>One way data binding :</p>
+<input type="text" [value]="newValue" (keyup)="changeNewValue($event)">
+<br/>
+<p>Entered Value : {{newValue}}</p>
+<br/>
+<p>Two way Binding :</p>
+<input [(ngModel)]="twoValue" />
+<p>Entered Value for two way binding : {{twoValue}}</p>
+
+
+<br/>
+<p>Two Way Binding second method :</p>
+<input [ngModel]="secondValue"  (ngModelChange)="changeValue($event)"/>
+<p>Entered Value for two way binding : {{secondValue}}</p>

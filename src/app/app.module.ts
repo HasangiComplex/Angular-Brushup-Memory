@@ -7,12 +7,14 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import {SharedService} from "./services/shared.service";
 import {FormsModule} from "@angular/forms";
+import { DataBindingsComponent } from './components/data-bindings/data-bindings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    DataBindingsComponent
   ],
   imports: [
     BrowserModule,

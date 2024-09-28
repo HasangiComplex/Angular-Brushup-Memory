@@ -4,12 +4,14 @@
 <p>One way data binding :</p>
 <input type="text" [value]="newValue" (keyup)="changeNewValue($event)">
 <br/>
+
 <p>Entered Value : {{newValue}}</p>
 <br/>
+
 <p>Two way Binding :</p>
 <input [(ngModel)]="twoValue" />
-<p>Entered Value for two way binding : {{twoValue}}</p>
 
+<p>Entered Value for two way binding : {{twoValue}}</p>
 
 <br/>
 <p>Two Way Binding second method :</p>

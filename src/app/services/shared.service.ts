@@ -6,9 +6,7 @@ import { Injectable } from '@angular/core';
 export class SharedService {
   shared?: 100;
 
-  constructor() {
-
-  }
+  constructor() {}
   getShareValue(){
     return this.shared
   }
